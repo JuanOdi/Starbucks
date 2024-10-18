@@ -1,0 +1,16 @@
+/*********************************
+ Top Page
+**********************************/
+@use "../modules" as m;
+
+/* Banner */
+.top-banner {
+  height: 100dvh;
+  max-height: 1080px;
+
+  &__item {
+    &--01 { background: m.$gray; }
+    &--02 { background: m.$black; }
+  }
+
+}
