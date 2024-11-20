@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './navbar/partials/Header';
+import Header from '../navbar/partials/Header';
 const Main = () => {
   return (
     <>
