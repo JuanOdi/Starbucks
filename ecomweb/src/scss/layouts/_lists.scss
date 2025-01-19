@@ -2,3 +2,38 @@
  Lists
 **********************************/
 @use "../modules" as m;
+
+.list-01{
+    list-style: none;
+}
+.item-01{
+    &__ttl{
+        font-size:2rem;
+        line-height: m.calculate_lh(30,37);
+        letter-spacing: m.calculate_ls(80);
+        margin-top: 20px;
+    }
+}
+.list-02{
+    // max-width: 680px;
+    @include m.flex($fw:wrap,$jc:flex-end );
+}
+.item-02{
+    margin-top:50px;
+    padding: 25px 80px;
+    &__img{
+        // width: m.vwVal(210,1920);
+        max-width: 150px;
+        margin-right: 20px;
+        border-radius: 100%;
+    }
+    &__ttl{
+        font-size:2rem;
+        max-width: 220px;
+        text-align: center;
+        line-height: m.calculate_lh(30,37);
+        
+        letter-spacing: m.calculate_ls(80);
+        margin-top: 20px;
+    }
+}

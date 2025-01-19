@@ -24,3 +24,43 @@
     background: m.$gray;
   }
 }
+
+.p-menu{
+  margin-top:50px;
+  @include m.flex($jc:space-between);
+  &__ttl-menu{
+    text-align: center;
+    font-size:3rem;
+    margin-top:140px;
+  }
+  &__ttl{
+    font-size: 3rem;
+    letter-spacing: m.calculate_ls(80);
+    cursor: pointer;
+    &:nth-child(n+2){
+      margin-top: 20px;
+    }
+    &::before{
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: m.$gray;
+    }
+  }
+  &__ttl-02{
+    font-size:4rem;
+    letter-spacing: m.calculate_ls(80);
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      bottom: m.vwVal(-20,1920);
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: m.$gray;
+    }
+  }
+}

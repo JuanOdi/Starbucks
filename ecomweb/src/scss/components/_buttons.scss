@@ -2,3 +2,14 @@
  Buttons
 **********************************/
 @use "../modules" as m;
+
+.btn-group{
+    // max-width: 365px;
+    // padding:10px;
+    margin: 50px auto;
+}
+.btn01{
+    border:1px solid m.$white;
+    padding:10px 25px;
+    border-radius: 50px;
+}

@@ -4,13 +4,205 @@
 @use "../modules" as m;
 
 /* Banner */
-.top-banner {
-  height: 100dvh;
-  max-height: 1080px;
 
-  &__item {
-    &--01 { background: m.$gray; }
-    &--02 { background: m.$black; }
+.top-banner {
+  &__ttl{
+    position: absolute;
+    // top:120px;
+    // left: 70px;
+    // font-size:100px ;
+    top:m.vwVal(150,1920);
+    left: m.vwVal(105,1920);
+    font-size:  m.vwVal(100,1920);
+    font-family: m.$font-montserat;
+    color: m.$white;
+  }
+  &__coffee, &__you{
+    // font-weight: 700;
+    font-size: m.vwVal(150,1920);
+    text-transform: uppercase;
+  }
+  &__you{
+    color: m.$green;
+  }
+}
+
+.top-banner{
+  background-color: m.$black;
+  &__img{
+    // height: 100vh;
+    aspect-ratio: 1920/1315;
+    opacity: .5;
   }
 
+  &__social{
+    position: absolute;
+    top: m.vwVal(940,1920);
+    left: m.vwVal(105,1920);
+    z-index: 2;
+    @include m.flex( $gap:m.vwVal(55,1920));
+  }
+  &__social-img{
+    width: m.vwVal(65,1920);
+  }
+  &__more-btn{
+    position: absolute;
+    // bottom: m.vwVal(25,1920);
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 105px;
+  }
+}
+
+.top-stories{
+  margin-block:100px;
+  background-color: m.$black02;
+  
+  &__content{
+    @include m.flex($jc:space-between, $ai:flex-start);
+    padding-block: 115px;
+    @include m.mqMax{
+      flex-wrap:wrap;
+      justify-content: center;
+    }
+  }
+  &__img{
+    width:100%;
+    max-width: 460px;
+  }
+  &__info{
+    font-family: m.$font-montserat;
+    text-align: center;
+    color: m.$white;
+    font-size: 2.8rem;
+  }
+  &__text{
+    line-height: 2.5;
+  }
+  &__btn{
+    font-size: 2.6rem;
+  }
+}
+
+.top-order{
+  margin-block:100px;
+  background-color: m.$green02;
+  &__content{
+    @include m.flex($fd:row-reverse, $jc:space-between, $ai:flex-start,$gap:30px);
+    padding-block: 115px;
+    @include m.mqMax{
+      flex-wrap:wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__img{
+    width: 100%;
+    max-width: 750px;
+    @include m.mqMax(1199px){
+    max-width: 550px;
+     
+    }
+  }
+  &__ttl{
+    font-size: 3rem;
+    font-weight:  700;
+  }
+  &__info{
+    padding-block: 115px;
+    margin-left: 50px;
+    font-family: m.$font-montserat;
+    text-align: center;
+    color: m.$black;
+    font-size:2.8rem;
+    @include m.mqMax{
+      margin-left: 0;
+      padding-inline: 20px;       
+    }
+  }
+  &__text{
+    line-height: 2.5;
+    margin-top: 40px;
+  }
+  &__btn{
+    font-size: 2.6rem;
+    border:2px solid m.$black;
+  }
+}
+
+.top-join{
+  background-color: m.$black02;
+  
+  &__content{
+    @include m.flex($jc:space-between, $ai:flex-start, $gap:80px);
+    padding: 100px 40px;
+    @include m.mqMax{
+      flex-wrap:wrap;
+      justify-content: center;
+    }
+  }
+  &__img{
+    width: 100%;
+    max-width: 550px;
+    border-radius: 50px;
+  }
+  &__info{
+    font-family: m.$font-montserat;
+    text-align: center;
+    color: m.$white;
+    font-size: 2.3rem;
+    padding-top: 50px;
+    @include m.mqMax{
+      padding: 0;
+    }
+  }
+  &__text{
+    line-height: 2.5;
+  }
+  &__btn{
+    font-size: 2.6rem;
+  }
+}
+
+.top-learn{
+  margin-block:100px;
+  background-color: m.$violet;
+
+  &__content{
+    @include m.flex($jc:space-between, $ai:center, $fd:row-reverse);
+    padding-block: 50px ;
+    @include m.mqMax{
+      flex-wrap:wrap;
+      justify-content: center;
+    }
+  }
+  &__img{
+    width: 100%;
+    max-width: 790px;
+    @include m.mqMax(1199px){
+      max-width: 690px;
+    }
+  }
+  &__ttl{
+    font-size: 3rem;
+    font-weight:  700;
+  }
+  &__info{
+    padding-inline:40px;
+    padding-top: 80px;
+    font-family: m.$font-montserat;
+    text-align: center;
+    color: m.$white;
+    font-size:2.8rem;
+  }
+  &__text{
+    line-height: 2;
+    margin-top:40px;
+  }
+  &__btn{
+    font-size: 2.6rem;
+    border:2px solid m.$white;
+  }
 }

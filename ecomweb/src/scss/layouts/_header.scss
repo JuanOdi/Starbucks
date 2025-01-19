@@ -11,7 +11,7 @@
   width: 100%;
   height: 100px;
   padding: 0 40px;
-  background: m.$white;
+  background: transparent;
   z-index: 100;
   user-select: none;
   @include m.transition(box-shadow);
@@ -19,13 +19,14 @@
     height: 80px;
     padding: 0 20px;
   }
-
+  
   .admin-bar & {
     top: 32px;
   }
 
   .is-scrolled & {
     box-shadow: 0 0 10px -5px m.$black;
+    // background-color: m.$white;
   }
 
   &__logo {
@@ -38,7 +39,7 @@
 
   &__nav {
     flex: 1;
-    @include m.flex($gap: 50px, $ai: center, $jc: flex-end);
+    @include m.flex($gap: 50px, $ai: center, $jc: space-between);
     @include m.mqMax {
       position: absolute;
       top: 100%;
@@ -62,13 +63,29 @@
       }
     }
   }
+
 }
 
 /* Menu */
 .menu {
-  @include m.flex($gap: 30px, $ai: center, $jc: flex-end);
+  @include m.flex($gap: 30px, $ai: center, $jc: flex-start);
+   &__ttl{
+    color: m.$white;
+    font-size: 2rem;
+    font-family: m.$font-montserat;
+    text-transform: uppercase;
+    body.page & {
+      color: m.$black;
+    }
+   }
+   &__btn{
+    border: 1px solid m.$white;
+    padding:10px 15px;
+    border-radius: 50px;
+    margin-right: 15px;
+   }
+ 
 }
-
 /* Menu Bar */
 .menu-bar {
   position: relative;

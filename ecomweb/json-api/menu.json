@@ -1,0 +1,60 @@
+{
+    "Menu": {
+        "Drinks": [
+            {
+                "name": "Hot Coffee",
+                "image":"../src/assets/pages/menu/coffee_01.jpg"
+            },
+            {
+                "name": "Hot Tea",
+                "image":"../src/assets/pages/menu/hot-teas.jpg"
+            },
+            {
+                "name": "Frappuccino",
+                "image":"../src/assets/pages/menu/frapp.jpg"
+            },
+            {
+                "name": "Iced Energy",
+                "image":"../src/assets/pages/menu/iced-energy.jpg"
+            }
+        ],
+        "Food":[
+            {
+                "name": "Hot Breakfast",
+                "image":"../src/assets/pages/menu/hot-breakfast.jpg"
+            },
+            {
+                "name": "Oatmeal & Yogurt",
+                "image":"../src/assets/pages/menu/oatmeal.jpg"
+            },
+            {
+                "name": "Bakery",
+                "image":"../src/assets/pages/menu/bakery.jpg"
+            },
+            {
+                "name": "Lunch",
+                "image":"../src/assets/pages/menu/lunch.jpg"
+            }
+        ],
+        "At home Coffee":[
+            {
+                "name": "Whole Bean",
+                "image":"../src/assets/pages/menu/whole-bean.jpeg"
+            },
+            {
+                "name": "Ground",
+                "image":"../src/assets/pages/menu/ground.jpg"
+            }
+        ],
+        "Merchandise":[
+            {
+                "name": "Tumblers",
+                "image":"../src/assets/pages/menu/tumblers.jpg"
+            },
+            {
+                "name": "Cold Cups",
+                "image":"../src/assets/pages/menu/cold-cups.jpeg"
+            }
+        ]
+    }
+}

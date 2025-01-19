@@ -1,14 +1,18 @@
 // Colors
 $white: #fff;
 $black: #000;
+$black02:#232323;
 $gray: #d3d3d3;
-
+$green:#0D6930;
+$green02:#C9D690;
+$violet:#8E0130;
 $default-font-size: 1.6rem;
 
 $font-noto-serif: "Noto Serif JP", serif;
 $font-noto-sans: "Noto Sans JP", sans-serif;
+$font-montserat: "Montserrat", sans-serif;
 
-$font-primary: $font-noto-sans;
+$font-primary: $font-montserat;
 
 $default-mqMax-width: 991px;
 $default-mqMin-width: 992px;
